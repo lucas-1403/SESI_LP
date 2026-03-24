@@ -7,8 +7,16 @@ disciplina de logica de programação d turma do SESI de 2026
 ```bash
 git config --global user.name "Seu Nome"
 ```
+```bash
 git config --global user.email "seuemail@email.com"
+```
+```bash
 git config user.name "Outro Nome"
+```
+```bash
 git config user.email "outro@email.com"
+```
+```bash
 git config --list
+```
 
