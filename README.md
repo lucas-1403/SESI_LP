@@ -16,10 +16,25 @@ git config user.name "Outro Nome"
 ```bash
 git config user.email "outro@email.com"
 ```
-## 📱Acesso a lista
+## 📱 Acesso a lista
 ```bash
 git config --list
 ```
-
-# ⚙ Configuração de arquivos
-
+## ⚙️ Acesso aos aquivos
+```bash
+git status
+```
+## ⚙️ criação de arquivos
+```bash
+git add nome_do_arquivo
+```
+```bash
+git commit -m "descrição
+```
+## 🔒 movimentação de arquivos
+```bash
+git push
+```
+```bash
+git pull
+```
