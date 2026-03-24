@@ -16,6 +16,7 @@ git config user.name "Outro Nome"
 ```bash
 git config user.email "outro@email.com"
 ```
+# 📱Acesso a lista
 ```bash
 git config --list
 ```
