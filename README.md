@@ -21,3 +21,5 @@ git config user.email "outro@email.com"
 git config --list
 ```
 
+# ⚙ Configuração de arquivos
+
