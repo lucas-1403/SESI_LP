@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+void main(){
+  int i=0;
+  int soma = 0;
+  
+  while(i < 100){
+      if (i % 2 ==1){
+          printf("%i \n", soma );
+  soma += i;
+      }
+      i++;
+  }
+}

@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+void main(){
+    int N1;
+    int i=0;
+    int soma=0;
+ 
+ printf("digite um numero:");
+ scanf("%i", &N1);
+ 
+ while(i < N1){
+     printf("%i \n", soma);
+     soma += i;
+     i++;
+ }
+}

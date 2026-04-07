@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int numero;
+    int soma = 0;
+
+    do {
+        printf("Digite um numero (0 para parar): ");
+        scanf("%i", &numero);
+        soma += numero;
+    } while (numero != 0);
+
+    printf("A soma dos numeros digitados e: %i\n", soma);
+
+}

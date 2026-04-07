@@ -1,0 +1,12 @@
+#include<stdio.h>
+
+void main(){
+  int multiplicaÃÂ§ÃÂ£o=1;
+  int i = 1;
+  
+  while(i < 10){
+    printf("%i \n", multiplicaÃÂ§ÃÂ£o);
+    multiplicaÃÂ§ÃÂ£o *= i;
+    i++;
+  }
+}

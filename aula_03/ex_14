@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+void main(){
+    int N1;
+    
+    printf("digite algum numero:");
+    scanf("%i", &N1);
+    int i = N1;
+    
+   while(i > 0){
+       printf("%i \n", i );
+       i--;
+   }
+}

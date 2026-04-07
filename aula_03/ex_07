@@ -1,0 +1,12 @@
+#include<stdio.h>
+
+void main(){
+  int soma=0;
+  int i = 0;
+  
+  while(i < 10){
+  printf("%i \n", soma );
+  soma += i;
+    i++;
+  }
+}
