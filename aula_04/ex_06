@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int v[10], p[10], i[10], cp = 0, ci = 0;
+
+    for (int k = 0; k < 10; k++) {
+        printf("Digite o %d o numero: ", k + 1);
+        scanf("%d", &v[k]);
+        
+        if (v[k] % 2 == 0) p[cp++] = v[k]; 
+        else i[ci++] = v[k];              
+    }
+
+    printf("\n--- RESULTADO ---");
+    printf("\nPares (%d): ", cp);
+    for (int k = 0; k < cp; k++) printf("%d ", p[k]);
+
+    printf("\nImpares (%d): ", ci);
+    for (int k = 0; k < ci; k++) printf("%d ", i[k]);
+    printf("\n");
+
+    return 0;
+}

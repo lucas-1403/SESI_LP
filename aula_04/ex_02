@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int id, j = 0, a = 0, i_do = 0; 
+
+    printf("Digite 15 idades:\n");
+    for (int i = 0; i < 15; i++) {
+        scanf("%d", &id);
+
+        if (id <= 17) j++;
+        else if (id <= 59) a++;
+        else i_do++;
+    }
+
+    printf("\nJovens: %d | Adultos: %d | Idosos: %d\n", j, a, i_do);
+
+    printf("Maior grupo: ");
+    if (j >= a && j >= i_do) printf("Jovens\n");
+    else if (a >= j && a >= i_do) printf("Adultos\n");
+    else printf("Idosos\n");
+
+}

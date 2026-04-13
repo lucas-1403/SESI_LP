@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    float s[10], total = 0, max;
+    int i, acima = 0;
+
+    for (i = 0; i < 10; i++) {
+        printf("Valor do saque %d: R$ ", i + 1);
+        scanf("%f", &s[i]);
+        
+        total += s[i];
+        
+        if (i == 0 || s[i] > max) max = s[i]; 
+        
+        if (s[i] > 500) acima++;             
+    }
+
+    printf("\n--- RESUMO DO CAIXA ---");
+    printf("\nTotal sacado: R$ %.2f", total);
+    printf("\nMaior saque: R$ %.2f", max);
+    printf("\nSaques acima de R$ 500: %d\n", acima);
+
+    return 0;
+}

@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    float n[10], soma = 0, media;
+    int i, cont = 0;
+
+    printf("Digite as 10 notas:\n");
+    for (i = 0; i < 10; i++) {
+        scanf("%f", &n[i]);
+        soma += n[i];
+    }
+
+    media = soma / 10;
+    printf("\nMedia: %.2f\n", media);
+
+    printf("Notas acima da media: ");
+    for (i = 0; i < 10; i++) {
+        if (n[i] > media) {
+            printf("[%.1f] ", n[i]);
+            cont++;
+        }
+    }
+    printf("\nTotal de alunos acima da media: %d\n", cont);
+
+}

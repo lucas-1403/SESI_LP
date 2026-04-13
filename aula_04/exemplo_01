@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    char nome[9];
+    int i = 0;
+    
+    printf("digite seu nome: ");
+    scanf("%s", &nome);
+    
+    while(nome[i] != '\0'){
+        i++;
+    }
+    
+    printf("\n nome: %s", &nome);
+    printf("\n quantidade de letras: %d", i);
+    
+    
+    
+}

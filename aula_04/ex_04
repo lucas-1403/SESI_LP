@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int v[10], i, j, c, dom = -1;
+
+    printf("Digite 10 numeros:\n");
+    for (i = 0; i < 10; i++) {
+        scanf("%d", &v[i]);
+    }
+
+    for (i = 0; i < 10; i++) {
+        c = 0;
+        
+        for (j = 0; j < 10; j++) {
+            if (v[i] == v[j]) {
+                c++;
+            }
+        }
+
+        if (c > 5) {
+            dom = v[i];
+            break;
+        }
+    }
+
+    if (dom != -1) {
+        printf("\nDominante: %d (aparece %d vezes)\n", dom, c);
+    } else {
+        printf("\nNao existe valor dominante.\n");
+    }
+
+}
