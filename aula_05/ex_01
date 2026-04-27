@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{     int vetor[5];
+       int i=1;
+       int num;
+       
+       while( i<6 ){
+           printf("digite o %i numero que devera ser armazenado: ", i);
+           scanf("%i", &vetor[i]);
+           
+           i++;
+       }
+       
+}
