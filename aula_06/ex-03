@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int main(){
+    int matriz[3][3];
+    
+    for(int l=0; l < 3; l++){
+        for(int c=0; c < 3; c++){
+            printf("digite valor de l:%i, c:%i :", l+1, c+1);
+            scanf("%i", &matriz[l][c]);
+        }
+    }
+    
+    printf("----------------------------");
+    printf("\n");
+    
+    int l=0;
+    int c=0;
+    
+    for(l=0; l<3; l++){
+        for(c=0; c<3; c++){
+            printf(" | %i", matriz[l][c]);
+        }
+        printf("\n");
+    }
+    
+   for(int i = 0; i < 3; i++){
+    printf(" \ndiagonal: %i ", matriz[i][i]);
+}
+}

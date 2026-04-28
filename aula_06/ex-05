@@ -1,0 +1,35 @@
+#include<stdio.h>
+
+int main(){
+    int matriz[3][3];
+    int soma;
+
+    for(int l=0; l < 3; l++){
+        for(int c=0; c < 3; c++){
+            printf("Digite valor [%i][%i]: ", l+1, c+1);
+            scanf("%i", &matriz[l][c]);
+        }
+    }
+
+    printf("----------------------------\n");
+
+    for(int l=0; l<3; l++){
+        for(int c=0; c<3; c++){
+            printf(" | %i", matriz[l][c]);
+        }
+        printf("\n");
+    }
+
+    printf("\nA soma de cada coluna é:\n");
+
+    for(int c = 0; c < 3; c++){
+        soma = 0;
+
+        for(int l = 0; l < 3; l++){
+            soma += matriz[l][c];
+        }
+
+        printf("Coluna %d = %d\n", c+1, soma);
+    }
+
+}
