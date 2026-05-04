@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main()
+{
+   int matriz[4][4];
+    int soma;
+    int menor, maior;
+
+    for(int l=0; l < 4; l++){
+        for(int c=0; c < 4; c++){
+            printf("Digite valor [%i][%i]: ", l+1, c+1);
+            scanf("%i", &matriz[l][c]);
+        }
+    }
+    
+        printf("----------------------------\n");
+
+    for(int l=0; l<4; l++){
+        for(int c=0; c<4; c++){
+            printf(" | %i", matriz[l][c]);
+        }
+        printf("\n");
+    }
+    
+        for(i = 0; i < 4; i++) {
+        for(j = 0; j < 4; j++) {
+            if(matriz[i][j] > maior) {
+                maior = matriz[i][j];
+            }
+            if(matriz[i][j] < menor) {
+                menor = matriz[i][j];
+            }
+        }
+    }
+      
+          printf("Maior: %d\n", maior);
+    printf("Menor: %d\n", menor);
+
+    return 0;
+}
+    
+}
