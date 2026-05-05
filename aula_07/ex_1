@@ -1,0 +1,50 @@
+#include <stdio.h>
+
+int somadedoisvalores(int a, int b){
+    return a + b;
+}
+
+int subtracaodedoisvalores(int a, int b){
+    return a - b;
+}
+
+int divisaodedoisvalores(int a, int b){
+    return a / b;
+}
+
+int multiplicacaodedoisvalores(int a, int b){
+    return a * b;
+}
+
+void imprimirvalores(int soma, int sub, int mult, int divs){
+     printf("\n\nsoma dos dois numeros: %i", soma);
+     printf("\n\nsubtracao dos valores: %i", sub);
+     printf("\n\nmultiplicacao dos valores: %i", mult);
+      printf("\n\ndivisao dos valores: %i", divs);
+}
+
+int main()
+{
+    int n1,n2;
+    int soma;
+    int sub;
+    int mult;
+    int divs;
+    
+    printf("\ndigite primeiro valor: ");
+    scanf("%i", &n1);
+    
+    printf("\ndigite segundo valor: ");
+    scanf("%i", &n2);
+    
+    soma = somadedoisvalores(n1, n2);
+    
+    sub = subtracaodedoisvalores(n1, n2);
+    
+    mult = multiplicacaodedoisvalores(n1, n2);
+    
+    divs = divisaodedoisvalores(n1, n2);
+    
+    
+    imprimirvalores(soma, sub, mult, divs);
+}
